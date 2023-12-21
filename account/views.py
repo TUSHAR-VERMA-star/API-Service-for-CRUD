@@ -12,8 +12,6 @@ def register_user(request):
         username = request.POST.get('username')
         password = request.POST.get('password')
 
-        # You may add more validation and error handling as needed
-
         # Create user
         try:
             user = User.objects.create_user(username=username, password=password)
